@@ -1,0 +1,3 @@
+#!C:\Users\Flavio\Dropbox\Doutorado\DOUTORADO\ATIVIDADES DOUTORADO\TESE - FINAL\Material Michel\projectTese\.tese\Scripts\python.exe
+from numba.pycc import main
+main()

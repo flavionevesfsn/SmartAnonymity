@@ -1,0 +1,62 @@
+Dataset,subDominio,SensorCategories,IoTSubdomain,Inference Type,Anonymization Algorithm
+1,SecurityPublic,48,SecurityPublic,Percentage,k-anonimato
+2,SecurityPublic,44,SecurityPublic,Percentage,k-anonimato
+3,SecurityPublic,44,SecurityPublic,Percentage,k-anonimato
+4,SecurityPublic,46,SecurityPublic,Percentage,k-anonimato
+5,SecurityPublic,45,SecurityPublic,Percentage,k-anonimato
+6,SecurityPublic,44,SecurityPublic,Percentage,k-anonimato
+7,UrbanMobility,40,UrbanMobility,Percentage,Generalização de Dados
+8,UrbanMobility,36,UrbanMobility,Percentage,Generalização de Dados
+9,UrbanMobility,40,UrbanMobility,Percentage,Generalização de Dados
+10,UrbanMobility,36,UrbanMobility,Percentage,Generalização de Dados
+11,UrbanMobility,39,UrbanMobility,Percentage,Generalização de Dados
+12,UrbanMobility,40,UrbanMobility,Percentage,Generalização de Dados
+13,SmartGrid,15,SmartGrid,Percentage,k-anonimato
+14,SmartGrid,15,SmartGrid,Percentage,k-anonimato
+15,SmartGrid,15,SmartGrid,Percentage,k-anonimato
+16,SmartGrid,15,SmartGrid,Percentage,k-anonimato
+17,SmartGrid,15,SmartGrid,Percentage,k-anonimato
+18,SmartGrid,15,SmartGrid,Percentage,k-anonimato
+19,SmartHome,25,SmartHome,Percentage,Ofuscação
+20,SmartHome,24,SmartHome,Percentage,Ofuscação
+21,SmartHome,24,SmartHome,Percentage,Ofuscação
+22,SmartHome,25,SmartHome,Percentage,Ofuscação
+23,SmartHome,24,SmartHome,Percentage,Ofuscação
+24,SmartHome,24,SmartHome,Percentage,Ofuscação
+25,SmartCampus,57,SecurityPublic,Percentage,k-anonimato
+26,SmartCampus,55,SecurityPublic,Percentage,k-anonimato
+27,SmartCampus,49,SecurityPublic,Percentage,k-anonimato
+28,SmartCampus,55,SecurityPublic,Percentage,k-anonimato
+29,SmartCampus,55,SecurityPublic,Percentage,k-anonimato
+30,SmartCampus,55,SecurityPublic,Percentage,k-anonimato
+31,Undefined,1,Undefined,specification,k-anonimato
+32,Agriculture,28,Agriculture,Percentage,Pertubação
+33,Agriculture,27,Agriculture,Percentage,Pertubação
+34,Agriculture,26,Agriculture,Percentage,Pertubação
+35,Agriculture,26,Agriculture,Percentage,Pertubação
+36,Agriculture,28,Agriculture,Percentage,Pertubação
+37,Agriculture,28,Agriculture,Percentage,Pertubação
+38,Logistic,27,Logistic,Percentage,Ofuscação
+39,Logistic,25,Logistic,Percentage,Ofuscação
+40,Logistic,24,Logistic,Percentage,Ofuscação
+41,Logistic,23,Logistic,Percentage,Ofuscação
+42,Logistic,24,Logistic,Percentage,Ofuscação
+43,Logistic,24,Logistic,Percentage,Ofuscação
+44,IndustrialProcesses,46,IndustrialProcesses,Percentage,Ofuscação
+45,IndustrialProcesses,44,IndustrialProcesses,Percentage,Ofuscação
+46,IndustrialProcesses,43,IndustrialProcesses,Percentage,Ofuscação
+47,IndustrialProcesses,46,IndustrialProcesses,Percentage,Ofuscação
+48,IndustrialProcesses,41,IndustrialProcesses,Percentage,Ofuscação
+49,IndustrialProcesses,41,IndustrialProcesses,Percentage,Ofuscação
+50,HealthCare,21,HealthCare,Percentage,Pertubação
+51,HealthCare,21,HealthCare,Percentage,Pertubação
+52,HealthCare,21,HealthCare,Percentage,Pertubação
+53,HealthCare,16,HealthCare,Percentage,Pertubação
+54,HealthCare,21,HealthCare,Percentage,Pertubação
+55,HealthCare,20,HealthCare,Percentage,Pertubação
+56,IndependentLiving,28,HealthCare,Percentage,Pertubação
+57,IndependentLiving,16,IndependentLiving,Percentage,Pertubação
+58,IndependentLiving,16,IndependentLiving,Percentage,Pertubação
+59,IndependentLiving,16,IndependentLiving,Percentage,Pertubação
+60,IndependentLiving,16,IndependentLiving,Percentage,Pertubação
+61,IndependentLiving,16,IndependentLiving,Percentage,Pertubação

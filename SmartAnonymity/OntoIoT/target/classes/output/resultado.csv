@@ -1,0 +1,12 @@
+Dataset,SensorCategories,IoTSubdomain,Inference Type,Anonymization Algorithm
+1,48,SecurityPublic,Percentage,k-anonimato
+2,40,UrbanMobility,Percentage,Generalização de Dados
+3,6,SmartGrid,Ontology,k-anonimato
+4,45,SecurityPublic,Percentage,k-anonimato
+5,57,SecurityPublic,Percentage,k-anonimato
+6,1,Undefined,specification,k-anonimato
+7,28,Agriculture,Percentage,Pertubação
+8,27,Logistic,Percentage,Ofuscação
+9,46,IndustrialProcesses,Percentage,Ofuscação
+10,21,HealthCare,Percentage,Pertubação
+11,28,HealthCare,Percentage,Pertubação

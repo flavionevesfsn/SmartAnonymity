@@ -1,0 +1,3 @@
+Dataset,,,,,,,,,,,,,,
+1,WaterTemperature,Turbidity,Transducer,WaveHeight,WavePeriod,Battery,,,,,,,,
+2,AirTemperature,WetBulbTemperature,Humidity,RainIntensity,IntervalRain,TotalRain,PrecipitationType,WindDirection,WindSpeed,MaximumWindSpeed,Barometer,SolarRadiation,Heading,BatteryLife

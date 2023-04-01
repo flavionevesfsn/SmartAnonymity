@@ -1,0 +1,6 @@
+FID,ogc_fid,name,description,timestamp,begin,end,altitudemode,tessellate,extrude,visibility,draworder,icon,id,nombre,descripcion,direccion,url,email,contacto,horarios,precios,titularidad,tarjetajoven,accesopmr,tlfcontacto,infoesp,wkb_geometry
+da_desfibriladores.fid--6de7be59_18145dd5b6d_691c,5606730,,,,,,,-1,0,-1,,,3178,DEA_068,Parking Alcazaba (!ª planta frente cabina control),"PLAZA DE JESÚS ""EL RICO"", 2",,,,L-M-X-J-V-S-D 24 horas,,MUNICIPAL,No,No,952212300,,POINT (373494.48812670575 4065047.762490367)
+da_desfibriladores.fid--6de7be59_18145dd5b6d_691d,5606731,,,,,,,-1,0,-1,,,3636,DEA_086,Parking Alcazaba (Oficinas SMASSA) Recepción/Información,"PLAZA DE JESÚS ""EL RICO"", 2",,,,09:00 - 14:00 horas.,,MUNICIPAL,No,No,952060104,,POINT (373519.18262053875 4065042.118034627)
+da_desfibriladores.fid--6de7be59_18145dd5b6d_691e,5606732,,,,,,,-1,0,-1,,,3645,DEA_091,Castillo Gibralfaro (Recepción),"CAMINO GIBRALFARO, 11",,,,"Verano: 09:00 a 20:00 horas
+Invierno: 09:00 - 18:00 horas",,MUNICIPAL,No,No,658754890,,POINT (374073.96978800395 4065109.143061568)
+da_desfibriladores.fid--6de7be59_18145dd5b6d_691f,5606733,,,,,,,-1,0,-1,,,3189,DEA_005,Centro Servicio Social El Palo (Recepción),"CALLE DÁNVILA Y COLLADO, 4",,cmingorance@malaga.eu,,L-M-X-J-V  7:10 a 20:30 h,,MUNICIPAL,No,No,951926072,,POINT (378697.41886908887 4064621.9805230275)

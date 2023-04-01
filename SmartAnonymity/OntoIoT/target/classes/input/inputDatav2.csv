@@ -1,0 +1,4 @@
+Dataset,Sensors,,,,,,,,,,,,,
+1,Accelerometer,Actigraphy,Bio,Biochip,Breathalyzer,DiffusionTensorImaging,FunctionalMagneticResonanceImaging,GroundSpeedRadar,Heartbeat,MagneticResonanceImaging,Nano,NanoTetherball,PiezoElectricAccelerometer,Location
+2,Bio,Biochip,Heartbeat,Breathalyzer,MagneticResonanceImaging,NanoTetherball,,,,,,,,
+3,Accelerometer,GroundSpeedRadar,,,,,,,,,,,,

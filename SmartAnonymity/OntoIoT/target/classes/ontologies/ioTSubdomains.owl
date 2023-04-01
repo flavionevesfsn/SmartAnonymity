@@ -1,0 +1,3657 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#isSensorCategoryOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SubDominiosIoT"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#isSensorCategoryOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#isSensorCategoryOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SubDominiosIoT"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#Agriculture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#Agriculture">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SubDominiosIoT"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataAirPressure"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataAnimalHealth"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataEnvironmentalBrightness"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataEnvironmentalTemperature"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataHumiditySoil"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataIrrigation"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataMonitoringPlantations"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataQualitySoil"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataRelativeHumidityAir"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataAccessManagement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataAccessManagement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataAirPressure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataAirPressure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataAnimalHealth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataAnimalHealth">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataAutomationLighting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataAutomationLighting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataBiometric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataBiometric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataBroadBandGateways -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataBroadBandGateways">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataCampusEnergyControl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataCampusEnergyControl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataCellPhoneUsage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataCellPhoneUsage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataCommunicationVehicleInfrastructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataCommunicationVehicleInfrastructure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataCommunicationVehicleVehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataCommunicationVehicleVehicle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataConditionElderly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataConditionElderly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataConnectedDevicesEnergy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataConnectedDevicesEnergy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataCorporateAreaNetworks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataCorporateAreaNetworks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataCrowdsPeople -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataCrowdsPeople">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataDangerousGoods -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataDangerousGoods">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataDevicesDetectShots -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataDevicesDetectShots">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataDisasterAlerts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataDisasterAlerts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataDistanceOtherVehicles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataDistanceOtherVehicles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataDoor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataDoor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataDrivingTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataDrivingTime">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataElectronicLocks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataElectronicLocks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataEnergyConsumption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataEnergyConsumption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataEnergyGeneration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataEnergyGeneration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataEnergyStorage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataEnergyStorage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataEnergyTransmission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataEnergyTransmission">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataEnvironmentalBrightness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataEnvironmentalBrightness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataEnvironmentalMonitoringSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataEnvironmentalMonitoringSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataEnvironmentalTemperature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataEnvironmentalTemperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataFacialRecognition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataFacialRecognition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataFacialRecognitionSmartCameras -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataFacialRecognitionSmartCameras">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataFireDetection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataFireDetection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataHighFalantes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataHighFalantes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataHouseLocation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataHouseLocation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataHouseTemperature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataHouseTemperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataHumiditySoil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataHumiditySoil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataIdentificationMedicalInstrumentation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataIdentificationMedicalInstrumentation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataIndustrialEquipmentOperation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataIndustrialEquipmentOperation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataIndustrialManagement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataIndustrialManagement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataIndustrialProduction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataIndustrialProduction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataIntelSmartWasteManagement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataIntelSmartWasteManagement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataIntrusionDetection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataIntrusionDetection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataIrrigation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataIrrigation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataIrrigationAutomation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataIrrigationAutomation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataManagementBathrooms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataManagementBathrooms">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataMaterialIdentification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataMaterialIdentification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataMonitoringCamera -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataMonitoringCamera">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataMonitoringPlantations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataMonitoringPlantations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataPCsUsage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataPCsUsage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataParkingAvailableSpaces -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataParkingAvailableSpaces">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataPersonalAssistants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataPersonalAssistants">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataPhysicalExercises -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataPhysicalExercises">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataPhysiologicalSigns -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataPhysiologicalSigns">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataPowerEnergy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataPowerEnergy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataPresence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataPresence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataPressureTiresVehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataPressureTiresVehicle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataProductIdentification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataProductIdentification">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataProductsLocation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataProductsLocation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataPublicTransportationSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataPublicTransportationSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataQualityProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataQualityProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataQualitySoil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataQualitySoil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataQueryScreens -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataQueryScreens">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataRealTimeLocation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataRealTimeLocation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataRelativeHumidityAir -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataRelativeHumidityAir">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataResidentialMovement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataResidentialMovement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSecurityAlarms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSecurityAlarms">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSecurityCameras -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSecurityCameras">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSleepMonitoring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSleepMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartBeds -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartBeds">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartBusTracking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartBusTracking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartCanteenManagement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartCanteenManagement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartLibrary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartLibrary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartLighting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartLighting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartParking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartParking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartSecurity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartSecurity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartSensing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartSensing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartTrafficSignal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartTrafficSignal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartVisitorMonitoring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartVisitorMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartWasteManagement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartWasteManagement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSocketsUse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSocketsUse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSound">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSpeedVehicles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSpeedVehicles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataStockLevel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataStockLevel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataTelevisionUse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataTelevisionUse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataThermostatsUse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataThermostatsUse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataTimeUseDevices -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataTimeUseDevices">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataTrafficCongestion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataTrafficCongestion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataUndefined -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataUndefined">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataUseAutomatedBlinds -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataUseAutomatedBlinds">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataUseElectricAppliances -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataUseElectricAppliances">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataUseLaptops -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataUseLaptops">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataUseLights -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataUseLights">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataUserHabits -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataUserHabits">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataVehicleDriverPresence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataVehicleDriverPresence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataVehicleEngine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataVehicleEngine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataVehicleFuelConsumption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataVehicleFuelConsumption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataVehicleLocation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataVehicleLocation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataVehicleSpeedControl -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataVehicleSpeedControl">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataVehicleStops -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataVehicleStops">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataVideoSurveillance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataVideoSurveillance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataVitalFunctionsMonitoring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataVitalFunctionsMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HealthCare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HealthCare">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SubDominiosIoT"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataPersonalAssistants"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataPhysicalExercises"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataPhysiologicalSigns"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSleepMonitoring"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#IndependentLiving -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#IndependentLiving">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SubDominiosIoT"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataConditionElderly"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataCorporateAreaNetworks"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataIdentificationMedicalInstrumentation"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataMaterialIdentification"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartBeds"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataVitalFunctionsMonitoring"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#IndustrialProcesses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#IndustrialProcesses">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SubDominiosIoT"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataDangerousGoods"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataDistanceOtherVehicles"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataDrivingTime"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataIndustrialEquipmentOperation"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataIndustrialManagement"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataIndustrialProduction"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataPressureTiresVehicle"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSpeedVehicles"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataVehicleDriverPresence"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataVehicleEngine"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataVehicleFuelConsumption"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataVehicleLocation"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataVehicleStops"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#Logistic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#Logistic">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SubDominiosIoT"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataDoor"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataProductIdentification"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataProductsLocation"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataQualityProduct"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataStockLevel"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataVehicleFuelConsumption"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataVehicleLocation"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataVehicleSpeedControl"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SecurityPublic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SecurityPublic">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SubDominiosIoT"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataDevicesDetectShots"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataDisasterAlerts"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataFacialRecognitionSmartCameras"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataPresence"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataRealTimeLocation"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSecurityAlarms"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSecurityCameras"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartSensing"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SensorCategory">
+        <rdfs:comment>Listagem de dados que podem ser recebidos dos dispositivos IoT, esta listagem contempla todos dos domínios.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SmartCampus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SmartCampus">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SubDominiosIoT"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataBiometric"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataCampusEnergyControl"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataEnvironmentalMonitoringSystem"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataFacialRecognition"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataFireDetection"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataManagementBathrooms"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartBusTracking"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartCanteenManagement"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartLibrary"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartLighting"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartParking"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartSecurity"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartVisitorMonitoring"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartWasteManagement"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SmartGrid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SmartGrid">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SubDominiosIoT"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataConnectedDevicesEnergy"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataEnergyConsumption"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataEnergyGeneration"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataEnergyStorage"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataEnergyTransmission"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataPowerEnergy"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataTimeUseDevices"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SmartHome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SmartHome">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SubDominiosIoT"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataAccessManagement"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataAutomationLighting"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataBroadBandGateways"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataCellPhoneUsage"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataElectronicLocks"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataHouseLocation"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataHouseTemperature"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataIntrusionDetection"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataIrrigationAutomation"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataPCsUsage"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataResidentialMovement"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSocketsUse"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSound"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataTelevisionUse"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataThermostatsUse"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataUseAutomatedBlinds"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataUseElectricAppliances"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataUseLaptops"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataUseLights"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataUserHabits"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataVideoSurveillance"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SubDominiosIoT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SubDominiosIoT"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#Undefined -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#Undefined">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SubDominiosIoT"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataUndefined"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#UrbanMobility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#UrbanMobility">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SubDominiosIoT"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataCommunicationVehicleInfrastructure"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataCommunicationVehicleVehicle"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataCrowdsPeople"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataHighFalantes"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataMonitoringCamera"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataParkingAvailableSpaces"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataPublicTransportationSystem"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataQueryScreens"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSmartTrafficSignal"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataSpeedVehicles"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataTrafficCongestion"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#hasSensorCategory"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DataVehicleLocation"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ABSIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ABSIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AfrIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AfrIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AnprWhereVehiclesAreTimedOverFixedDistanceIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AnprWhereVehiclesAreTimedOverFixedDistanceIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AccelerometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AccelerometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ActigraphyIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ActigraphyIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ActinometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ActinometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ActivePixelIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ActivePixelIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AirFlowMeterIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AirFlowMeterIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AirFuelRatioMeterIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AirFuelRatioMeterIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AirPollutionIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AirPollutionIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AirSpeedIndicatorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AirSpeedIndicatorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AirbagIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AirbagIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AlarmIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AlarmIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AltimeterIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AltimeterIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AnalogImageProcessingIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AnalogImageProcessingIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AnemometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AnemometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AngleSensitivePixelIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AngleSensitivePixelIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AngularRateIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AngularRateIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ArrayIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ArrayIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AtomicForceMicroscopyIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AtomicForceMicroscopyIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AtomicGravitationalWaveInterferometricIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AtomicGravitationalWaveInterferometricIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AttitudeIndicatorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AttitudeIndicatorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AutomaticTransmissionSpeedIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AutomaticTransmissionSpeedIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AuxanometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#AuxanometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BackIlluminatedIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BackIlluminatedIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BarographIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BarographIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BarometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BarometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BedwettingAlarmIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BedwettingAlarmIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BhangmeterIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BhangmeterIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BimetallicStripIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BimetallicStripIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BioIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BioIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BiochipIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BiochipIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BiofetIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BiofetIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BlindSpotMonitorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BlindSpotMonitorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BolometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BolometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BoostGaugeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BoostGaugeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BourdonGaugeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BourdonGaugeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BrakeFluidPressureIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BrakeFluidPressureIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BreathalyzerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BreathalyzerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BubbleChamberIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#BubbleChamberIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CmosIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CmosIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CalorimeterIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CalorimeterIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CamshaftPositionIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CamshaftPositionIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CapacitanceProbeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CapacitanceProbeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CapacitiveDisplacementIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CapacitiveDisplacementIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CapacitiveSensingIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CapacitiveSensingIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CarbonDioxideIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CarbonDioxideIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CarbonMonoxideDetectorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CarbonMonoxideDetectorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CarbonPasteElectrodeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CarbonPasteElectrodeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CatadioptricIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CatadioptricIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CatalyticBeadIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CatalyticBeadIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CeilometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CeilometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ChargeCoupledDeviceIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ChargeCoupledDeviceIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ChemicalFieldEffectTransistorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ChemicalFieldEffectTransistorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ChemiResistorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ChemiResistorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ChemoReceptorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ChemoReceptorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CloudChamberIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CloudChamberIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ColorimeterIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ColorimeterIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CompressiveSensingIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CompressiveSensingIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ContactImageIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ContactImageIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CrankShaftPositionIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CrankShaftPositionIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CryogenicParticleDetectorsIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CryogenicParticleDetectorsIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CurbFeelerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CurbFeelerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CurrentIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CurrentIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CylinderHeadTemperatureGaugeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#CylinderHeadTemperatureGaugeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DalyDetectorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DalyDetectorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DefectDetectorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DefectDetectorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DepthGaugeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DepthGaugeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DewWarningIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DewWarningIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DiffusionTensorImagingIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DiffusionTensorImagingIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DigitalHolographyIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DigitalHolographyIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DisplacementReceiverIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DisplacementReceiverIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DopplerRadarIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#DopplerRadarIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ElectroOpticalIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ElectroOpticalIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ElectroChemicalFatigueCrackIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ElectroChemicalFatigueCrackIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ElectroChemicalGasIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ElectroChemicalGasIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ElectroMechanicalFilmIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ElectroMechanicalFilmIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ElectronMultiplierIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ElectronMultiplierIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ElectronicNoseIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ElectronicNoseIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ElectronicTongueIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ElectronicTongueIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ElectroscopeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ElectroscopeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#EnergyDispersiveXraySpectrosIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#EnergyDispersiveXraySpectrosIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#EngineCoolantTemperatureIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#EngineCoolantTemperatureIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#EngineCrankcasePressureIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#EngineCrankcasePressureIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ExhaustGasTemperatureGaugeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ExhaustGasTemperatureGaugeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ExhaustGasTemperatureIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ExhaustGasTemperatureIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FabryPerotInterferometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FabryPerotInterferometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FaradayCupIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FaradayCupIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FiberOpticIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FiberOpticIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FineGuidanceIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FineGuidanceIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FishCounterIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FishCounterIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FisheriesAcousticsIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FisheriesAcousticsIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FlameDetectorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FlameDetectorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FlatPanelDetectorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FlatPanelDetectorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FlexIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FlexIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FlowIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FlowIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FluorescentChlorideIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FluorescentChlorideIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FluxgateCompassIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FluxgateCompassIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ForceGaugeAndForceIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ForceGaugeAndForceIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FreeFallIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FreeFallIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FrequencyDomainIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FrequencyDomainIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FuelLevelIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FuelLevelIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FuelPressureIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FuelPressureIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FunctionalMagneticResonanceImagingIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FunctionalMagneticResonanceImagingIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FusionIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#FusionIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GasMeterIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GasMeterIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GalvanometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GalvanometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GardonGaugeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GardonGaugeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GasDetectorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GasDetectorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GaseousIonizationDetectorsIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GaseousIonizationDetectorsIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GeigerCounterIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GeigerCounterIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GeophoneIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GeophoneIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GlassBreakDetectorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GlassBreakDetectorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GolayCellIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GolayCellIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GravimeterIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GravimeterIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GridIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GridIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GroundPenetratingRadarIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GroundPenetratingRadarIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GroundSpeedRadarIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GroundSpeedRadarIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GyroscopeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GyroscopeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GyroscopicIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#GyroscopicIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HallEffectIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HallEffectIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HallProbeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HallProbeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HartmannWaveFrontIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HartmannWaveFrontIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HeartbeatIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HeartbeatIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HeatFluxIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HeatFluxIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HolographicIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HolographicIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HookGaugeEvaporimeterIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HookGaugeEvaporimeterIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HotFilamentIonizationGaugeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HotFilamentIonizationGaugeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HumistorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HumistorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HydrocarbonDewPointAnalyzerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HydrocarbonDewPointAnalyzerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HydrogenIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HydrogenIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HydrogenSulfideIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HydrogenSulfideIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HydrometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HydrometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HydrophoneIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HydrophoneIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HygrometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HygrometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HyperspectralIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#HyperspectralIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ImageFormatIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ImageFormatIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ImageIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ImageIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ImpactIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ImpactIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#InclinometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#InclinometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#IncrementalEncoderIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#IncrementalEncoderIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#InductiveIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#InductiveIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#InertialNavigationSystemIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#InertialNavigationSystemIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#InertialReferenceUnitIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#InertialReferenceUnitIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#InfraredIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#InfraredIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#InfraredPointIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#InfraredPointIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#InfraredThermometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#InfraredThermometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#IntegratedCircuitPiezoElectricIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#IntegratedCircuitPiezoElectricIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#IntelligentIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#IntelligentIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#InterferometricReflectanceImagingIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#InterferometricReflectanceImagingIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#IonSelectiveElectrodeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#IonSelectiveElectrodeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#IonizationChamberIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#IonizationChamberIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#IonizationGaugeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#IonizationGaugeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#KineticInductanceDetectorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#KineticInductanceDetectorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#KnockIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#KnockIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LedAsLightIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LedAsLightIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LabOnAChipIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LabOnAChipIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LaserBeamProfilerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LaserBeamProfilerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LaserRangeFinderIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LaserRangeFinderIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LaserSurfaceVelocimeterIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LaserSurfaceVelocimeterIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LaserSurfaceVelocimetersForMovingSurfacesIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LaserSurfaceVelocimetersForMovingSurfacesIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LeafIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LeafIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LevelIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LevelIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LightAddressablePotentiometricIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LightAddressablePotentiometricIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LightIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LightIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LinearEncoderIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LinearEncoderIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LinearVariableDifferentialTransformerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LinearVariableDifferentialTransformerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LiquidCapacitiveInclinometersIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LiquidCapacitiveInclinometersIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LittoralAirborneHyperspectralIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LittoralAirborneHyperspectralIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LoadCellIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LoadCellIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#Location -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LysimeterIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#LysimeterIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MapIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MapIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MEMSMagneticFieldIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MEMSMagneticFieldIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MHDIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MHDIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MachineVisionIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MachineVisionIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MachmeterIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MachmeterIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MagneticAnomalyDetectorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MagneticAnomalyDetectorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MagneticCompassIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MagneticCompassIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MagneticLevelGaugeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MagneticLevelGaugeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MagneticResonanceImagingIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MagneticResonanceImagingIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MagnetometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MagnetometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MagnetoresistanceIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MagnetoresistanceIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MassAirflowIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MassAirflowIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MassFlowIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MassFlowIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#McleodGaugeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#McleodGaugeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MetalDetectorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MetalDetectorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MicrobolometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MicrobolometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MicroElectroMechanicalSystemsIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MicroElectroMechanicalSystemsIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MicrophoneIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MicrophoneIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MicroWaveChemistryIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MicroWaveChemistryIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MicroWaveRadiometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MicroWaveRadiometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MillimeterWaveScannerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MillimeterWaveScannerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MoireDeflectometryIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MoireDeflectometryIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MolecularIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MolecularIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MotionDetectorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MotionDetectorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MullerTubeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#MullerTubeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#NanoIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#NanoIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#NanoTetherballIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#NanoTetherballIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#NetRadiometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#NetRadiometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#NeutronDetectionIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#NeutronDetectionIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#NicholsRadiometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#NicholsRadiometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#NitrogenOxideIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#NitrogenOxideIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#NodeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#NodeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#NondispersiveInfraredIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#NondispersiveInfraredIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#NuclearDensityGaugeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#NuclearDensityGaugeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#OccupancyIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#OccupancyIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#OdometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#OdometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#OilLevelIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#OilLevelIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#OilPressureIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#OilPressureIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#OlfactometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#OlfactometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#OmnidirectionalCameraIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#OmnidirectionalCameraIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#OmniviewTechnologyIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#OmniviewTechnologyIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#OpticalCoherenceTomographyIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#OpticalCoherenceTomographyIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#OpticalPositionIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#OpticalPositionIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#OptodeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#OptodeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#OrganolepticIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#OrganolepticIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#OscillatingIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#OscillatingIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#OxygenIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#OxygenIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#OzoneMonitorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#OzoneMonitorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ParkingIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ParkingIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ParticleDetectorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ParticleDetectorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PassiveInfraredIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PassiveInfraredIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PellistorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PellistorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PermanentDownholeGaugeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PermanentDownholeGaugeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PhaseUnwrappingTechniquesIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PhaseUnwrappingTechniquesIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PhotoDetectorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PhotoDetectorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PhotoDiodeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PhotoDiodeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PhotoElasticityIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PhotoElasticityIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PhotoElectricIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PhotoElectricIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PhotoionizationDetectorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PhotoionizationDetectorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PhotoMultiplierIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PhotoMultiplierIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PhotoResistorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PhotoResistorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PhotoSwitchIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PhotoSwitchIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PhotoTransistorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PhotoTransistorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PhotoTubeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PhotoTubeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PickupIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PickupIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PiezoIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PiezoIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PiezoCapacitivePressureIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PiezoCapacitivePressureIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PiezoElectricAccelerometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PiezoElectricAccelerometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PiezoElectricIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PiezoElectricIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PiezometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PiezometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PiraniGaugeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PiraniGaugeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PitometerLogsIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PitometerLogsIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PitotTubesIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PitotTubesIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PlanarHallIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PlanarHallIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PolygraphTruthDetectionIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PolygraphTruthDetectionIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PositionIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PositionIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PositionSensitiveDeviceIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PositionSensitiveDeviceIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PositronEmissionTomographyIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PositronEmissionTomographyIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PotentiometricIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PotentiometricIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PressureGaugeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PressureGaugeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PressureIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PressureIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ProportionalCounterIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ProportionalCounterIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ProximityIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ProximityIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PsychrometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PsychrometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PushBroomScannerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PushBroomScannerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PyranometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PyranometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PyrgeometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PyrgeometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PyrometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#PyrometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#QuantizationSignalProcessingIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#QuantizationSignalProcessingIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#QuantumIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#QuantumIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#QuartzThermometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#QuartzThermometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#RadarGunIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#RadarGunIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#RadarIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#RadarIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#RadioDirectionFinderIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#RadioDirectionFinderIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#RainGaugeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#RainGaugeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#RainIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#RainIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#RangeImagingIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#RangeImagingIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#RedoxElectrodeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#RedoxElectrodeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ReedSwitchIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ReedSwitchIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ResistanceThermometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ResistanceThermometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#RingLaserGyroscopeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#RingLaserGyroscopeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#RotaryEncoderIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#RotaryEncoderIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#RotaryVariableDifferentialTransformerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#RotaryVariableDifferentialTransformerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SnotelIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SnotelIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SSMISMicrowaveImagerSounderIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SSMISMicrowaveImagerSounderIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ScanningSQUIDMicroscopeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ScanningSQUIDMicroscopeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ScintillationCounterIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ScintillationCounterIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ScintillatorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ScintillatorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ScintillometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ScintillometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SeismometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SeismometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SelsynIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SelsynIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SemiconductorDetectorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SemiconductorDetectorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ShockDataLoggerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ShockDataLoggerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ShockDetectorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ShockDetectorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SiliconBandgapTemperatureIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SiliconBandgapTemperatureIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SinglePhotonAvalancheDiodeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SinglePhotonAvalancheDiodeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SinglePhotonEmissionComputedTomographyIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SinglePhotonEmissionComputedTomographyIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SmartDustIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SmartDustIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SmokeDetectorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SmokeDetectorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SnowGaugeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SnowGaugeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SoftIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SoftIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SoilMoistureIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SoilMoistureIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SonarIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SonarIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SoundLocatorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SoundLocatorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#IonsElectronsScintillationThermalPlasmaAnalysisPackageIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#IonsElectronsScintillationThermalPlasmaAnalysisPackageIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SpeedometersIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SpeedometersIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#StaringArrayIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#StaringArrayIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#StrainGaugeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#StrainGaugeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#StretchIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#StretchIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#StructuredLightScannerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#StructuredLightScannerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#StudFinderIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#StudFinderIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SuddenMotionIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SuddenMotionIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SunAttitudeControlIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SunAttitudeControlIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SuperConductingNanowireSinglePhotonDetectorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SuperConductingNanowireSinglePhotonDetectorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SuperConductingQuantumInterferenceDeviceIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SuperConductingQuantumInterferenceDeviceIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SyntheticApertureRadarIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SyntheticApertureRadarIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TachometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TachometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TactileIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TactileIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TemperatureGaugeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TemperatureGaugeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TestLightIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TestLightIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ThermistorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ThermistorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ThermocoupleIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ThermocoupleIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ThermoLuminescentDosimeterIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ThermoLuminescentDosimeterIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ThermometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ThermometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ThermopileLaserIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ThermopileLaserIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ThinFilmThicknessMonitorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ThinFilmThicknessMonitorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ThrottlePositionIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ThrottlePositionIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TideGaugeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TideGaugeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TiltIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TiltIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TimeOfFlightCameraIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TimeOfFlightCameraIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TimePressureGaugeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TimePressureGaugeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TirePressureIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TirePressureIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TorqueIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TorqueIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TouchSwitchIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TouchSwitchIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TransducerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TransducerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TransitionEdgeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TransitionEdgeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TransmissionFluidTemperatureIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TransmissionFluidTemperatureIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TriangulationIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TriangulationIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TridarTriangulationAutomatedRendezvousDockingIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TridarTriangulationAutomatedRendezvousDockingIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TurbineSpeedIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TurbineSpeedIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TurnCoordinatorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#TurnCoordinatorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#UltraWideBandRadarIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#UltraWideBandRadarIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#UltrasonicIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#UltrasonicIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#UltrasonicThicknessGaugeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#UltrasonicThicknessGaugeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#UnattendedGroundIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#UnattendedGroundIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#VariableReluctanceIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#VariableReluctanceIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#VariometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#VariometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#VehicleSpeedIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#VehicleSpeedIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#VelocityReceiverIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#VelocityReceiverIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#VibratingStructureGyroscopeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#VibratingStructureGyroscopeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#VideoIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#VideoIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ViscometerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ViscometerIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#VisibleLightPhotonCounterIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#VisibleLightPhotonCounterIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#VisualNetworkIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#VisualNetworkIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#VoltageDetectorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#VoltageDetectorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#WaterInFuelIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#WaterInFuelIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#WaterMeterIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#WaterMeterIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#WaveFrontIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#WaveFrontIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#WeatherRadarIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#WeatherRadarIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#WheatstoneBridgeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#WheatstoneBridgeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#WheelSpeedIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#WheelSpeedIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#WireChamberIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#WireChamberIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#WiredGloveIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#WiredGloveIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#WirelessNetworkIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#WirelessNetworkIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#YawRateIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#YawRateIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ZincOxidNanorodIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#ZincOxidNanorodIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#pHGlassElectrodeIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#pHGlassElectrodeIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#semiconductorIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#semiconductorIndividual"/>
+    
+
+
+    <!-- http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SpecialMicrowave/ImagerIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/flavio/ontologies/2020/8/untitled-ontology-4#SpecialMicrowave/ImagerIndividual"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

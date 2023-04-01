@@ -1,0 +1,3 @@
+Invoice Date,From Date,To Date,Billing Days,kWh Usage,Daily Average kWh,Basic Charge,Step 1 per kWh Charge,Usage Charge Step 1,Step 1 kWh Threshold,Step 2 per kWh Charge,Usage Charge Step 2,Rate Rider,Total Energy Charge,Regional Transit Levy,Tax,Bill Total
+2012-04-20,2012-04-01,2012-04-19,19,688,36.2,2.86,0.0680,28.70,418,0.1019,27.11,2.93,61.60,1.19,3.23,66.01
+2012-06-19,2012-04-20,2012-06-18,60,1398,23.3,9.03,0.0680,90.58,1332,0.1019,6.73,5.32,111.66,3.74,6.03,121.43

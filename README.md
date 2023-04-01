@@ -1,0 +1,3 @@
+# ONTOIoT Framework
+
+O Smart Anonymity tem por objetivo recomendar qual o algoritmo de anonimização de dados é o mais adequado para o conjunto de dados, de acordo com suas características, usando como critérios para fazer a recomendação as principais características dos dados. Para a recomendação é necessária ser feita uma análise dos dados levando em consideração a origem deles, o tipo e a heterogeneidade, para que, de acordo com essas características, seja recomendado o algoritmo de anonimização mais eficaz para proteger os dados privados dos usuários e ao mesmo tempo possibilitar que os dados sejam úteis para análises futuras.
